@@ -27,7 +27,7 @@ function App() {
         : { username, email, password }; // Signup requires username, email, and password
 
       // Send a POST request to the server with the payload
-      const response = await axios.post(`http://localhost:5000${endpoint}`, payload);
+      const response = await axios.post(`https://sign-up2-xx27.onrender.com${endpoint}`, payload);
 
       // If successful, store the returned token in local storage and update the state
       localStorage.setItem('token', response.data.token);
@@ -47,7 +47,7 @@ function App() {
   const fetchProtectedData = async () => {
     try {
       // Send a GET request with the token in the Authorization header
-      const response = await axios.get('http://localhost:5000/protected', {
+      const response = await axios.get('https://sign-up2-xx27.onrender.com$, {
         headers: { Authorization: `Bearer ${token}` }
       });
 
