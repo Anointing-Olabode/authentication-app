@@ -47,7 +47,7 @@ function App() {
   const fetchProtectedData = async () => {
     try {
       // Send a GET request with the token in the Authorization header
-      const response = await axios.get('https://sign-up2-xx27.onrender.com$, {
+      const response = await axios.get('https://sign-up2-xx27.onrender.com/protected, {
         headers: { Authorization: `Bearer ${token}` }
       });
 
